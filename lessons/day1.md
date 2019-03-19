@@ -31,8 +31,8 @@ $ mkdir -p /mnt/isilon/some_lab/users/USER/.singularity
     * Use `shell` to enter image
     ```
     # on respublica
-    module load singularity 
-    singularity shell docker:maxulysse/samtools:1.0
+    $ module load singularity 
+    $ singularity shell docker:maxulysse/samtools:1.0
     ```
     
     * Search or tool execuatable
