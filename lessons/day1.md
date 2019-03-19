@@ -32,7 +32,7 @@ $ mkdir -p /mnt/isilon/some_lab/users/USER/.singularity
     ```
     # on respublica
     $ module load singularity 
-    $ singularity shell docker:maxulysse/samtools:1.0
+    $ singularity shell docker://maxulysse/samtools:1.0
     ```
     
     * Search or tool execuatable
