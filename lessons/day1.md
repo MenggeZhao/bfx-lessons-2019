@@ -1,40 +1,34 @@
 ### Day1 tasks
 
-#### Searching Dockerhub
+#### Task 1: Setup singularity (5min)
 
-#### Searching Biocontainers
-
-#### Running Singularity
-
-#### Task 0: Setup lab drive (5min)
+##### Setup lab drive
 ```
 # template: https://github.com/samesense/drive-template
 $ mkdir -p /mnt/isilon/some_lab/users/USER/.singularity
 ```
+##### Symlink singularity cache
+```
+# on respublica
+$ ln -s /mnt/isilon/some_lab/users/USER/.singularity /home/USER/.singularity
 
-#### Task 1: Setup singularity (5min)
-    ```
-    # on respublica
-    $ ln -s /mnt/isilon/some_lab/users/USER/.singularity /home/USER/.singularity
+# if ~/.singularity exists, copy content to lab drive space (/mnt/isilon/some_lab/users/USER/.singularity/)
+```
+
+##### Explore image in singularity
+* Locate image on dockerhub, singularity hub, quay, or biocontainers
+* Use `shell` to enter image
+```
+# on respublica
+$ module load singularity 
+$ singularity shell -B /mnt/isilon/:/mnt/isilon/ docker://maxulysse/samtools:1.0
+```
     
-    # if ~/.singularity exists, copy content to lab drive space (/mnt/isilon/some_lab/users/USER/.singularity/)
-    ```
+* Search or tool execuatable
+* Run tool help command
+* `cd` to your projects on isilon
 
-#### Task 2: Explore image in singularity (10min)
-    * Setup singularity 
-    * Locate image on dockerhub, singularity hub, quay, or biocontainers
-    * Use `shell` to enter image
-    ```
-    # on respublica
-    $ module load singularity 
-    $ singularity shell docker://maxulysse/samtools:1.0
-    ```
-    
-    * Search or tool execuatable
-    * Run tool help command
-    * `cd` to your projects on isilon
-
-#### Task 3: Update image (5 min)
+#### Task 2: Update image (5 min)
 ```
 $ singularity build --sandbox /tmp/debian docker://debian:latest
 $ sudo singularity exec --writable /tmp/debian apt-get install python
@@ -57,3 +51,9 @@ $ singularity build /tmp/debian2.simg /tmp/debian
 
 * Anaconda in container
 * Scif
+
+#### Searching Dockerhub
+
+#### Searching Biocontainers
+
+#### Running Singularity
