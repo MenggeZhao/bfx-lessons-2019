@@ -44,6 +44,7 @@ $ mkdir -p /mnt/isilon/some_lab/users/USER/tmp
 ### Add python to debian container
 ```
 # on respublica
+$ module load singularity 
 $ cd /mnt/isilon/some_lab/users/USER/tmp
 $ singularity build --sandbox debian docker://debian:latest
 $ sudo singularity exec --writable debian apt-get install python
