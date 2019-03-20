@@ -29,18 +29,13 @@ $ singularity shell -B /mnt/isilon/:/mnt/isilon/ docker://maxulysse/samtools:1.0
 * Run tool help command
 * `cd` to your projects on isilon
 
-#### Task 2: Update image (5 min)
-```
-$ singularity build --sandbox /tmp/debian docker://debian:latest
-$ sudo singularity exec --writable /tmp/debian apt-get install python
-$ singularity build /tmp/debian2.simg /tmp/debian
-```
 
-#### Task 4: Simple Dockerfile (5 min)
 
-#### Task 5: Automate dockerhub builds (10 min)
+#### Task 2: Simple Dockerfile (5 min)
 
-#### Task 6: Automate quay builds (10 min)
+#### Task 3: Automate dockerhub builds (10 min)
+
+#### Task 4: Automate quay builds (10 min)
 
 #### Building containers - getting help on github
 
@@ -58,3 +53,10 @@ $ singularity build /tmp/debian2.simg /tmp/debian
 #### Searching Biocontainers
 
 #### Running Singularity
+
+#### Task 2: Update image (5 min)
+```
+$ singularity build --sandbox /tmp/debian docker://debian:latest
+$ sudo singularity exec --writable /tmp/debian apt-get install python
+$ singularity build /tmp/debian2.simg /tmp/debian
+```
