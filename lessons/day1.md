@@ -32,7 +32,8 @@ $ singularity shell -B /mnt/isilon/:/mnt/isilon/ docker://maxulysse/samtools:1.0
 ## Task 2: Quay Dockerfile build (10 min)
 * Create [CHOP GitHub](https://github.research.chop.edu/) as needed
 * [Create CHOP GitHub repo](https://github.research.chop.edu/new) called `test-docker`
-* Create a Dockerfile in repo
+
+### Create a Dockerfile in CHOP GitHub repo
 ```
 ################## BASE IMAGE ######################
 
@@ -56,7 +57,8 @@ LABEL about.tags="Genomics"
 RUN conda install bedtools=2.27.0
 ```
 * [Create quay repo](https://quay.research.chop.edu/new/) called `test-quay` and link to GitHub repo `test-docker`
-* Test container
+
+### Test container
 ```
 # on respublica
 $ module load singularity
@@ -66,7 +68,8 @@ $ singularity shell -B /mnt/isilon/:/mnt/isilon/ docker://quay.research.chop.edu
 ## Task 3: DockerHub Dockerfile build (10 min)
 * Create [dockerhub](https://hub.docker.com/) and [github]((https://github.com/) accounts as needed
 * [Create GitHub repo](https://github.com/new) called `test-docker`
-* Create a Dockerfile in repo
+
+### Create a Dockerfile in GitHub repo
 ```
 ################## BASE IMAGE ######################
 
@@ -90,7 +93,8 @@ LABEL about.tags="Genomics"
 RUN conda install bedtools=2.27.0
 ```
 * [Create DockerHub automated repo](https://hub.docker.com/) called `test-docker` and link to GitHub repo `test-docker` 
-* Test container
+
+### Test container
 ```
 # on respublica
 $ module load singularity
