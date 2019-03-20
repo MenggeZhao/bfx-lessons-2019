@@ -1,4 +1,6 @@
-# Day 1 tasks
+# Day 1
+
+[Slides](../slides/day1/a.md)
 
 ## Task 1
 ##### Setup singularity (10min)
