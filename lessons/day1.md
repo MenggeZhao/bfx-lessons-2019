@@ -1,6 +1,6 @@
 ## Day1 tasks
 
-### Task 1: Setup singularity (5min)
+### Task 1: Setup singularity (10min)
 
 #### Setup lab drive
 ```
