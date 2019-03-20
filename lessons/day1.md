@@ -1,9 +1,4 @@
-### Day1
-
-#### What are containers?
-
-#### Why containers?
-* cattle not pets
+### Day1 tasks
 
 #### Searching Dockerhub
 
