@@ -32,26 +32,6 @@ $ singularity shell -B /mnt/isilon/:/mnt/isilon/ docker://maxulysse/samtools:1.0
 * `cd` to your projects on isilon
 
 ## Task 2
-##### Modify container (5 min)
----
-
-### Setup your tmp space
-```
-# template: https://github.com/samesense/drive-template
-$ mkdir -p /mnt/isilon/some_lab/users/USER/tmp
-```
-
-### Add python to debian container
-```
-# on respublica
-$ module load singularity 
-$ cd /mnt/isilon/some_lab/users/USER/tmp
-$ singularity build --sandbox debian docker://debian:latest
-$ sudo singularity exec --writable debian apt-get install python
-$ singularity build debian2.simg debian
-```
-
-## Task 3
 ##### Quay Dockerfile build (10 min)
 ---
 
@@ -131,15 +111,4 @@ $ singularity shell -B /mnt/isilon/:/mnt/isilon/ docker://{DOCKER-HUB-USER}/test
 
 #### Building containers - getting help on github
 
-#### Searching Dockerhub
-
-#### Searching Biocontainers
-
-#### Running Singularity
-
-#### Task 2: Update image (5 min)
-```
-$ singularity build --sandbox /tmp/debian docker://debian:latest
-$ sudo singularity exec --writable /tmp/debian apt-get install python
-$ singularity build /tmp/debian2.simg /tmp/debian
-```
+$SINGULARITY_CACHEDIR
