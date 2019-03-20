@@ -109,6 +109,6 @@ $ module load singularity
 $ singularity shell -B /mnt/isilon/:/mnt/isilon/ docker://{DOCKER-HUB-USER}/test-docker
 ```
 
-#### Building containers - getting help on github
-
-$SINGULARITY_CACHEDIR
+## Task 4
+##### Docker on mac (20 min)
+---
