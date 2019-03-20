@@ -1,13 +1,13 @@
-## Day 1 tasks
+# Day 1 tasks
 
-### Task 1: Setup singularity (10min)
+## Task 1: Setup singularity (10min)
 
-#### Setup lab drive
+### Setup lab drive
 ```
 # template: https://github.com/samesense/drive-template
 $ mkdir -p /mnt/isilon/some_lab/users/USER/.singularity
 ```
-#### Symlink singularity cache
+### Symlink singularity cache
 ```
 # on respublica
 $ ln -s /mnt/isilon/some_lab/users/USER/.singularity /home/USER/.singularity
@@ -16,7 +16,7 @@ $ ln -s /mnt/isilon/some_lab/users/USER/.singularity /home/USER/.singularity
 # (/mnt/isilon/some_lab/users/USER/.singularity/)
 ```
 
-#### Explore image in singularity
+### Explore image in singularity
 * Locate image on dockerhub, singularity hub, quay, or biocontainers
 * Use `shell` to enter image
 ```
@@ -29,7 +29,7 @@ $ singularity shell -B /mnt/isilon/:/mnt/isilon/ docker://maxulysse/samtools:1.0
 * Run tool help command
 * `cd` to your projects on isilon
 
-#### Task 2: Quay Dockerfile build (10 min)
+## Task 2: Quay Dockerfile build (10 min)
 * Create [CHOP GitHub](https://github.research.chop.edu/) as needed
 * [Create CHOP GitHub repo](https://github.research.chop.edu/new) called `test-docker`
 * Create a Dockerfile in repo
@@ -63,7 +63,7 @@ $ module load singularity
 $ singularity shell -B /mnt/isilon/:/mnt/isilon/ docker://quay.research.chop.edu/{USER}/test-quay
 ```
 
-#### Task 3: DockerHub Dockerfile build (10 min)
+## Task 3: DockerHub Dockerfile build (10 min)
 * Create [dockerhub](https://hub.docker.com/) and [github]((https://github.com/) accounts as needed
 * [Create GitHub repo](https://github.com/new) called `test-docker`
 * Create a Dockerfile in repo
