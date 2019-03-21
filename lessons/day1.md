@@ -135,7 +135,7 @@ $ docker push <dockerhub-user>/bc-img:first
 ### Test on respublica
 ```
 $ module load singularity
-$ singularity shell docker://<dockerhub-user>/bg-img:two
+$ singularity shell docker://<dockerhub-user>/bg-img:first
 ```
 
 ## Task 5
