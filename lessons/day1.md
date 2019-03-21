@@ -139,6 +139,7 @@ $ singularity shell docker://<dockerhub-user>/bg-img:two
 ```
 
 ## Task 5
+##### Build container on mac (15 min)
 ### Create a Dockerfile as /tmp/test-docker/Dockerfile
 ```
 ################## BASE IMAGE ######################
@@ -164,7 +165,6 @@ RUN conda install bedtools=2.27.0
 ```
 
 ### Build Dockerfile on mac
-##### Build container on mac (15 min)
 ```
 $ cd /tmp/test-docker
 $ docker build . --tag=<dockerhub-user>/bc-img:two
