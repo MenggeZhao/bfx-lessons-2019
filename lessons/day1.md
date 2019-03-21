@@ -112,9 +112,27 @@ $ singularity shell -B /mnt/isilon/:/mnt/isilon/ docker://{DOCKER-HUB-USER}/test
 ```
 
 ## Task 4
-##### Docker on mac (20 min)
+##### Modify container on mac (15 min)
 ---
 
+### Enter container as root
+```
+$ docker run -it --user root biocontainers:v1.0.0_cv4 /bin/bash
+# apt-get update
+# apt-get install imagemagick
+```
+
+### In new shell tab, save container and upload to DockerHub
+```
+# assuming you have dockerhub account
+# create DockerHub repo called bc-img
+$ docker ps # find container id
+$ docker commit <container_id> <dockerhub-user>/bc-img:first
+$ docker login
+$ docker push <dockerhub-user>/bc-img:first
+```
+
+## Task 5
 ### Create a Dockerfile as /tmp/test-docker/Dockerfile
 ```
 ################## BASE IMAGE ######################
@@ -139,8 +157,10 @@ LABEL about.tags="Genomics"
 RUN conda install bedtools=2.27.0
 ```
 
-### Build Dockerfile
+### Build Dockerfile on mac
+##### Build container on mac (15 min)
 ```
 $ cd /tmp/test-docker
-$ docker build .
+$ docker build . --tag=<dockerhub-user>/bc-img:two
+$ docker push samesense/bc-img:two
 ```
