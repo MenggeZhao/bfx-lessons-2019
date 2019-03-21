@@ -132,6 +132,12 @@ $ docker login
 $ docker push <dockerhub-user>/bc-img:first
 ```
 
+### Test on respublica
+```
+$ module load singularity
+$ singularity shell docker://<dockerhub-user>/bg-img:two
+```
+
 ## Task 5
 ### Create a Dockerfile as /tmp/test-docker/Dockerfile
 ```
@@ -163,4 +169,10 @@ RUN conda install bedtools=2.27.0
 $ cd /tmp/test-docker
 $ docker build . --tag=<dockerhub-user>/bc-img:two
 $ docker push samesense/bc-img:two
+```
+
+### Test on respublica
+```
+$ module load singularity
+$ singularity shell docker://<dockerhub-user>/bg-img:two
 ```
