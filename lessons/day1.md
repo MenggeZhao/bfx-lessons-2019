@@ -14,7 +14,7 @@ $ mkdir -p /mnt/isilon/some_lab/users/<USER>/.singularity
 ### Symlink singularity cache
 ```
 # on respublica
-$ ln -s /mnt/isilon/some_lab/users/<USER>/.singularity /home/USER/.singularity
+$ ln -s /mnt/isilon/some_lab/users/<USER>/.singularity /home/<USER>/.singularity
 
 # if ~/.singularity exists, copy content to lab drive space 
 # (/mnt/isilon/some_lab/users/<USER>/.singularity/)
