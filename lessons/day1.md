@@ -125,7 +125,7 @@ $ docker run -it --user root biocontainers:v1.0.0_cv4 /bin/bash
 ### In new shell tab, save container and upload to DockerHub
 ```
 # assuming you have dockerhub account
-# create DockerHub repo called bc-img
+# create DockerHub repo called bc-img (or any name you like)
 $ docker ps # find container id
 $ docker commit <container_id> <dockerhub-user>/bc-img:first
 $ docker login
