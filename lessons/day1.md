@@ -34,7 +34,7 @@ $ singularity shell -B /mnt/isilon/:/mnt/isilon/ docker://maxulysse/samtools:1.0
 * `cd` to your projects on isilon
 
 ## Task 2
-##### Quay Dockerfile build (10 min)
+##### Quay Dockerfile build (20 min)
 ---
 
 * Create [CHOP GitHub](https://github.research.chop.edu/) as needed
