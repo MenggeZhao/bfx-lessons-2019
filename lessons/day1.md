@@ -28,10 +28,16 @@ $ ln -s /mnt/isilon/some_lab/users/<USER>/.singularity /home/<USER>/.singularity
 $ module load singularity 
 $ singularity shell -B /mnt/isilon/:/mnt/isilon/ docker://maxulysse/samtools:1.0
 ```
-    
-* Search or tool execuatable
-* Run tool help command
-* `cd` to your projects on isilon
+
+### You are now inside the container
+```
+# Search or tool execuatable
+> which samtools
+# Run tool help command
+> samtools -h
+# cd to your projects on isilon
+> cd /mnt/isilon/<labname>_lab/
+```
 
 ## Task 2
 ##### Quay Dockerfile build (20 min)
@@ -118,8 +124,9 @@ $ singularity shell -B /mnt/isilon/:/mnt/isilon/ docker://{DOCKER-HUB-USER}/test
 ### Enter container as root
 ```
 $ docker run -it --user root biocontainers:v1.0.0_cv4 /bin/bash
-# apt-get update
-# apt-get install imagemagick
+# you are now inside the container
+> apt-get update
+> apt-get install imagemagick
 ```
 
 ### In new shell tab, save container and upload to DockerHub
