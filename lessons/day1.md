@@ -127,7 +127,7 @@ $ singularity shell -B /mnt/isilon/:/mnt/isilon/ docker://{DOCKER-HUB-USER}/test
 
 ### Enter container as root
 ```
-$ docker run -it --user root --detach-keys="ctrl-@" docker://biocontainers:v1.0.0_cv4 /bin/bash
+$ docker run -it --user root --detach-keys="ctrl-@" samesense/metaphlan2-docker /bin/bash
 # you are now inside the container
 > apt-get update
 > apt-get install imagemagick
