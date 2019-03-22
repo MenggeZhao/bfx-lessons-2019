@@ -147,7 +147,7 @@ $ docker kill <container_id> # stop container
 ### Test on respublica
 ```
 $ module load singularity
-$ singularity shell docker://<dockerhub-user>/bg-img:first
+$ singularity shell docker://<dockerhub-user>/bc-img:first
 > exit # leave container
 ```
 
@@ -187,6 +187,6 @@ $ docker push <dockerhub-user>/bc-img:two
 ### Test on respublica
 ```
 $ module load singularity
-$ singularity shell docker://<dockerhub-user>/bg-img:two
+$ singularity shell docker://<dockerhub-user>/bc-img:two
 > exit # leave container
 ```
