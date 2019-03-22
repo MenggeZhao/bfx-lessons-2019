@@ -11,6 +11,7 @@
 # template: https://github.com/samesense/drive-template
 $ mkdir -p /mnt/isilon/some_lab/users/<USER>/.singularity
 ```
+
 ### Symlink singularity cache
 ```
 # on respublica
@@ -37,6 +38,7 @@ $ singularity shell -B /mnt/isilon/:/mnt/isilon/ docker://maxulysse/samtools:1.0
 > samtools -h
 # cd to your projects on isilon
 > cd /mnt/isilon/<labname>_lab/
+> exit # leave container
 ```
 
 ## Task 2
@@ -76,6 +78,7 @@ RUN conda install bedtools=2.27.0
 # on respublica
 $ module load singularity
 $ singularity shell -B /mnt/isilon/:/mnt/isilon/ docker://quay.research.chop.edu/{USER}/test-quay
+> exit # leave container
 ```
 
 ## Task 3
@@ -115,6 +118,7 @@ RUN conda install bedtools=2.27.0
 # on respublica
 $ module load singularity
 $ singularity shell -B /mnt/isilon/:/mnt/isilon/ docker://{DOCKER-HUB-USER}/test-docker
+> exit # leave container
 ```
 
 ## Task 4
@@ -137,12 +141,14 @@ $ docker ps # find container id
 $ docker commit <container_id> <dockerhub-user>/bc-img:first # (or any tag name you like)
 $ docker login
 $ docker push <dockerhub-user>/bc-img:first
+$ docker kill <container_id> # stop container
 ```
 
 ### Test on respublica
 ```
 $ module load singularity
 $ singularity shell docker://<dockerhub-user>/bg-img:first
+> exit # leave container
 ```
 
 ## Task 5
@@ -182,4 +188,5 @@ $ docker push samesense/bc-img:two
 ```
 $ module load singularity
 $ singularity shell docker://<dockerhub-user>/bg-img:two
+> exit # leave container
 ```
