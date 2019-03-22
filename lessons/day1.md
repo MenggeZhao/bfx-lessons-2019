@@ -1,6 +1,6 @@
 # Day 1
 
-[Slides](../slides/day1/a.md)
+[Slides](../slides/day1/day1.md)
 
 ## Task 1
 ##### Setup singularity (10min)
