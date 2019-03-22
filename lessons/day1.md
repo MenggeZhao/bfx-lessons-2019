@@ -181,7 +181,7 @@ RUN conda install bedtools=2.27.0
 ```
 $ cd /tmp/test-docker
 $ docker build . --tag=<dockerhub-user>/bc-img:two
-$ docker push samesense/bc-img:two
+$ docker push <dockerhub-user>/bc-img:two
 ```
 
 ### Test on respublica
