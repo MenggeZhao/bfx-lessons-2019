@@ -127,6 +127,7 @@ $ singularity shell -B /mnt/isilon/:/mnt/isilon/ docker://{DOCKER-HUB-USER}/test
 
 ### Enter container as root
 ```
+$ docker login
 $ docker run -it --user root --detach-keys="ctrl-@" samesense/metaphlan2-docker /bin/bash
 # you are now inside the container
 > apt-get update
@@ -179,6 +180,7 @@ RUN conda install bedtools=2.27.0
 
 ### Build Dockerfile on mac
 ```
+docker login
 $ cd /tmp/test-docker
 $ docker build . --tag=<dockerhub-user>/bc-img:two
 $ docker push <dockerhub-user>/bc-img:two
