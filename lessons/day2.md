@@ -34,23 +34,23 @@ In this example, we will process fake paired-end RNA-seq data from FASTQ files. 
 Let’s get started by creating a workspace with our fake data:
 
 ```
-cd $HOME
+$ cd $HOME
 
 # Create a folder where we will run our commands:
-mkdir snakemake-example
-cd snakemake-example
+$ mkdir snakemake-example
+$ cd snakemake-example
 
 # Make a fake genome:
-touch genome.fa
+$ touch genome.fa
 
 # Make some fake data:
-mkdir fastq
-touch fastq/Sample1.R1.fastq.gz fastq/Sample1.R2.fastq.gz
-touch fastq/Sample2.R1.fastq.gz fastq/Sample2.R2.fastq.gz
+$ mkdir fastq
+$ touch fastq/Sample1.R1.fastq.gz fastq/Sample1.R2.fastq.gz
+$ touch fastq/Sample2.R1.fastq.gz fastq/Sample2.R2.fastq.gz
 ```
 
 ### Create Snakefile
-Let’s create a file called Snakefile to complete the first step of our pipeline. Open your preferred text editor, paste the code below, and save it into a file called snakemake-example/Snakefile.
+Let’s create a file called Snakefile to complete the first step of our pipeline. Open your preferred text editor, paste the code below, and save it into a file called `snakemake-example/Snakefile`.
 
 ```
 SAMPLES = ['Sample1', 'Sample2']
