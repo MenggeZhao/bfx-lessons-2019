@@ -84,6 +84,8 @@ Let’s extend our Snakefile to have one more rule. We’ll collate the two outp
 Here’s the new modified Snakefile. Notice that the final output for our pipeline (specified in the rule all section) is now called test.txt. Also notice that we have a recipe for creating the test.txt file in rule collate_outputs.
 
 ```
+SAMPLES = ['Sample1', 'Sample2']
+
 rule all:
     input:
         'test.txt'
