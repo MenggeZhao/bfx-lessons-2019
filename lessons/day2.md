@@ -187,3 +187,7 @@ $ watch --interval=0.1 qstat
 # Use Ctrl-C to stop qstat watch
 # snakemake -s rules/sf_cov_in_bam.py --drmaa -j 100 --rerun-incomplete --latency-wait 40 all_bam_cov
 ```
+
+## Task 3
+### Containers (10 min)
+---
