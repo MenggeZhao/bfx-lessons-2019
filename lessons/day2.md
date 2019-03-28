@@ -10,7 +10,7 @@
 ---
 
 ### Setup Miniconda
-* respublica: [Installon on Linux](https://conda.io/projects/conda/en/latest/user-guide/install/linux.html)
+* respublica: [Install on Linux](https://conda.io/projects/conda/en/latest/user-guide/install/linux.html)
 * [Installing on macOS](https://conda.io/projects/conda/en/latest/user-guide/install/macos.html) optional
 
 ### Install snakemake
