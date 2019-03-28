@@ -185,4 +185,5 @@ $ snakemake -s Snakefile --latency-wait 20  -p -j 2 -c "qsub -l h_vmem=1G -l mem
 # open new respulica session
 $ watch --interval=0.1 qstat
 # Use Ctrl-C to stop qstat watch
+# snakemake -s rules/sf_cov_in_bam.py --drmaa -j 100 --rerun-incomplete --latency-wait 40 all_bam_cov
 ```
