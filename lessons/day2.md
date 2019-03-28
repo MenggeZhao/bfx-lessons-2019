@@ -6,7 +6,7 @@
 * Box interactions
 
 ## Task 1
-### Installation (30 min)
+### Installation (20 min)
 ---
 
 ### Setup Miniconda
