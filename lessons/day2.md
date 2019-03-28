@@ -27,8 +27,10 @@ $ which snakemake
 
 ### Creating a fake workspace with FASTQ files
 In this example, we will process fake paired-end RNA-seq data from FASTQ files. Our “pipeline” consists of two steps:
-    * Quantify gene expression from the raw RNA-seq reads.
-    * Collate the gene expression outputs into one master file.
+
+* Quantify gene expression from the raw RNA-seq reads.
+* Collate the gene expression outputs into one master file.
+
 Let’s get started by creating a workspace with our fake data:
 
 ```
