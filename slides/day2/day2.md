@@ -359,7 +359,7 @@ rule dl_dropbox:
 rule upload_to_dropbox:
     input:  
         i = DATA + 'interim/boundary_annotated_anchors/{loop}'
-    output: DBox.remote(DB + "plots/boundaries/{loop}..pdf")
+    output: DBox.remote(DB + "plots/boundaries/{loop}.pdf")
     run:
         df = pd.read_csv(input.i, sep='\t')
         ...
