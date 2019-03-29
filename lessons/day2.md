@@ -161,7 +161,7 @@ from os.path import join
 GENOME = 'genome.fa'
 
 # Full path to a folder that holds all of your FASTQ files.
-FASTQ_DIR = './fastq/'
+FASTQ_DIR = 'fastq/'
 
 # A Snakemake regular expression matching the forward mate FASTQ files.
 SAMPLES, = glob_wildcards(join(FASTQ_DIR, '{sample,Samp[^/]+}.R1.fastq.gz'))
