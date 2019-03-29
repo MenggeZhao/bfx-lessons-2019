@@ -272,4 +272,4 @@ $ snakemake -s Snakefile --latency-wait 20 --use-singularity \
 -F all
 ```
 
-Next check `snakejob.quantify_genes.3.sh.e*` and `snakejob.quantify_genes.3.sh.o*` for info about your jobs.
+Next check `snakejob.quantify_genes*.sh.e*` and `snakejob.quantify_genes*.sh.o*` for info about your jobs.
