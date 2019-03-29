@@ -24,7 +24,7 @@ sh Miniconda3-latest-MacOSX-x86_64.sh
 
 ### Install snakemake
 ```
-$ conda create -y -n snakemake-env python=3.7
+$ conda create -y -n snakemake-env python=3.6
 # more lecture
 $ source activate snakemake-env
 $ conda install -y -c bioconda -c conda-forge snakemake
