@@ -201,7 +201,9 @@ rule collate_outputs:
 
 ### Run on cluster
 ```
-$ snakemake -s Snakefile --latency-wait 20  -p -j 2 -c "qsub -l h_vmem=1G -l mem_free=1G -l m_mem_free=1G"
+$ snakemake -s Snakefile --latency-wait 20  \
+-p -j 2 -c "qsub -l h_vmem=1G -l mem_free=1G -l m_mem_free=1G" \
+-F all
 
 # watch jobs
 # open new respulica session
