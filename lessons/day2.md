@@ -15,10 +15,10 @@
 
 ### Install snakemake
 ```
-$ conda create -n snakemake-env python=3.7
+$ conda create -y -n snakemake-env python=3.7
 # more lecture
 $ source activate snakemake-env
-$ conda install -c bioconda -c conda-forge snakemake
+$ conda install -y -c bioconda -c conda-forge snakemake
 # more lecture
 $ which snakemake
 ```
