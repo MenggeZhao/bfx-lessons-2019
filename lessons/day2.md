@@ -19,10 +19,12 @@ wget https://repo.anaconda.com/miniconda/Miniconda2-latest-MacOSX-x86_64.sh
 sh Miniconda3-latest-MacOSX-x86_64.sh
 ```
 
-### Install snakemake
+### Install snakemake environment
 ```
-$ conda create -y -n snakemake-env python=3.6 && source activate snakemake-env && conda install -y -c bioconda -c conda-forge snakemake
+wget https://raw.githubusercontent.com/samesense/bfx-lessons-2019/master/sm-env.yaml
+$ conda env create -n -f=sm-env.yaml
 # more lecture
+$ source activate snakemake-env
 $ which snakemake
 ```
 
