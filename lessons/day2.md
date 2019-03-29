@@ -249,7 +249,7 @@ rule quantify_genes:
     singularity:
         'docker://quay.research.chop.edu/evansj/plink2-docker'
     shell:
-        'plink2 --help > {output}
+        'plink2 --help > {output}'
         'echo {input.genome} {input.r1} {input.r2} >> {output}'
 
 rule collate_outputs:
