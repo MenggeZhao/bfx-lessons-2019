@@ -1,6 +1,6 @@
 # Day 1
 
-[Slides](../slides/day1/a.md)
+[Slides](../slides/day1/day1.md)
 
 ## Task 1
 ##### Setup singularity (10min)
@@ -127,7 +127,8 @@ $ singularity shell -B /mnt/isilon/:/mnt/isilon/ docker://{DOCKER-HUB-USER}/test
 
 ### Enter container as root
 ```
-$ docker run -it --user root --detach-keys="ctrl-@" biocontainers:v1.0.0_cv4 /bin/bash
+$ docker login
+$ docker run -it --user root --detach-keys="ctrl-@" samesense/metaphlan2-docker /bin/bash
 # you are now inside the container
 > apt-get update
 > apt-get install imagemagick
@@ -147,7 +148,7 @@ $ docker kill <container_id> # stop container
 ### Test on respublica
 ```
 $ module load singularity
-$ singularity shell docker://<dockerhub-user>/bg-img:first
+$ singularity shell docker://<dockerhub-user>/bc-img:first
 > exit # leave container
 ```
 
@@ -179,6 +180,7 @@ RUN conda install bedtools=2.27.0
 
 ### Build Dockerfile on mac
 ```
+docker login
 $ cd /tmp/test-docker
 $ docker build . --tag=<dockerhub-user>/bc-img:two
 $ docker push <dockerhub-user>/bc-img:two
@@ -187,6 +189,6 @@ $ docker push <dockerhub-user>/bc-img:two
 ### Test on respublica
 ```
 $ module load singularity
-$ singularity shell docker://<dockerhub-user>/bg-img:two
+$ singularity shell docker://<dockerhub-user>/bc-img:two
 > exit # leave container
 ```
