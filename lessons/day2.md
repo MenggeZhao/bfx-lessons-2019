@@ -1,9 +1,6 @@
 ## Day 2 Snakemake
-* Anaconda hpc 
-* Conda env snakemake
-* Singularity snakemake 
-* Http/ftp
-* Box interactions
+
+[Slides](../slides/day2/day2.md)
 
 ## Task 1
 ### Installation (30 min)
