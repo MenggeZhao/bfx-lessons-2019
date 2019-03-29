@@ -6,12 +6,21 @@
 * Box interactions
 
 ## Task 1
-### Installation (20 min)
+### Installation (30 min)
 ---
 
 ### Setup Miniconda
 * respublica: [Install on Linux](https://conda.io/projects/conda/en/latest/user-guide/install/linux.html)
+```
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+sh Miniconda3-latest-Linux-x86_64.sh
+```
+
 * [Installing on macOS](https://conda.io/projects/conda/en/latest/user-guide/install/macos.html) optional
+```
+wget https://repo.anaconda.com/miniconda/Miniconda2-latest-MacOSX-x86_64.sh
+sh Miniconda3-latest-MacOSX-x86_64.sh
+```
 
 ### Install snakemake
 ```
