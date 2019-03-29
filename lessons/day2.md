@@ -255,7 +255,7 @@ rule collate_outputs:
                     out.write(sample + ' ' + line)
 ```
 
-Now run snakemake
+Now run snakemake and check that `test.txt` has plink2 help docs.
 ```
 $ module load singularity
 $ snakemake -s Snakefile --latency-wait 20 --use-singularity \
