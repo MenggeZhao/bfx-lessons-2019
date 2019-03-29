@@ -249,8 +249,7 @@ rule quantify_genes:
     singularity:
         'docker://quay.research.chop.edu/evansj/plink2-docker'
     shell:
-        'plink2 --help > {output} && '
-        'echo {input.genome} {input.r1} {input.r2} >> {output}'
+        'plink2 --help > {output}'
 
 rule collate_outputs:
     input:
@@ -273,3 +272,5 @@ $ snakemake -s Snakefile --latency-wait 20 --use-singularity \
 -p -j 2 -c "qsub -cwd -V -l h_vmem=1G -l mem_free=1G -l m_mem_free=1G" \
 -F all
 ```
+
+Next check `snakejob.quantify_genes.3.sh.e*` and `snakejob.quantify_genes.3.sh.o*` for info about your jobs.
