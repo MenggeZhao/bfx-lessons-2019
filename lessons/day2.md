@@ -202,7 +202,7 @@ rule collate_outputs:
 ### Run on cluster
 ```
 $ snakemake -s Snakefile --latency-wait 20  \
--p -j 2 -c "qsub -l h_vmem=1G -l mem_free=1G -l m_mem_free=1G" \
+-p -j 2 -c "qsub -cwd -V -l h_vmem=1G -l mem_free=1G -l m_mem_free=1G" \
 -F all
 
 # watch jobs
@@ -270,6 +270,6 @@ Now run snakemake and check that `test.txt` has plink2 help docs.
 $ module load singularity
 $ snakemake -s Snakefile --latency-wait 20 --use-singularity \
 --singularity-args "-B /mnt/isilon/:/mnt/isilon/"\
--p -j 2 -c "qsub -l h_vmem=1G -l mem_free=1G -l m_mem_free=1G" \
+-p -j 2 -c "qsub -cwd -V -l h_vmem=1G -l mem_free=1G -l m_mem_free=1G" \
 -F all
 ```
