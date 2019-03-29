@@ -72,11 +72,17 @@ rule quantify_genes:
 
 ### Dryrun the pipeline
 ```
+# if not in env
+$ source activate snakemake-env
+
 $ snakemake -s Snakefile -n all
 ```
 
 ### Run the pipeline
 ```
+# if not in env
+$ source activate snakemake-env
+
 $ snakemake -s Snakefile -j2 all
 ```
 
@@ -117,6 +123,9 @@ rule collate_outputs:
 
 ### Run the pipeline
 ```
+# if not in env
+$ source activate snakemake-env
+
 # dryrun
 $ snakemake -s Snakefile -n all
 
@@ -185,13 +194,72 @@ rule collate_outputs:
 ### Run on cluster
 ```
 $ snakemake -s Snakefile --latency-wait 20  -p -j 2 -c "qsub -l h_vmem=1G -l mem_free=1G -l m_mem_free=1G"
+
 # watch jobs
 # open new respulica session
 $ watch --interval=0.1 qstat
 # Use Ctrl-C to stop qstat watch
-# snakemake -s rules/sf_cov_in_bam.py --drmaa -j 100 --rerun-incomplete --latency-wait 40 all_bam_cov
 ```
 
 ## Task 3
 ### Containers (10 min)
 ---
+
+```
+from os.path import join
+
+# Globals ---------------------------------------------------------------------
+
+# Full path to a FASTA file.
+GENOME = 'genome.fa'
+
+# Full path to a folder that holds all of your FASTQ files.
+FASTQ_DIR = './fastq/'
+
+# A Snakemake regular expression matching the forward mate FASTQ files.
+SAMPLES, = glob_wildcards(join(FASTQ_DIR, '{sample,Samp[^/]+}.R1.fastq.gz'))
+
+# Patterns for the 1st mate and the 2nd mate using the 'sample' wildcard.
+PATTERN_R1 = '{sample}.R1.fastq.gz'
+PATTERN_R2 = '{sample}.R2.fastq.gz'
+
+# Rules -----------------------------------------------------------------------
+
+rule all:
+    input:
+        'test.txt'
+
+rule quantify_genes:
+    input:
+        genome = GENOME,
+        r1 = join(FASTQ_DIR, PATTERN_R1),
+        r2 = join(FASTQ_DIR, PATTERN_R2)
+    output:
+        '{sample}.txt'
+    singularity:
+        'docker://quay.research.chop.edu/evansj/plink2-docker'
+    shell:
+        'plink2 --help > {output}
+        'echo {input.genome} {input.r1} {input.r2} >> {output}'
+
+rule collate_outputs:
+    input:
+        expand('{sample}.txt', sample=SAMPLES)
+    output:
+        'test.txt'
+    run:
+        with open(output[0], 'w') as out:
+            for i in input:
+                sample = i.split('.')[0]
+                for line in open(i):
+                    out.write(sample + ' ' + line)
+```
+
+Now run snakemake
+```
+$ module load singularity
+$ snakemake -s Snakefile --latency-wait 20 --use-singularity \
+--singularity-args "-B /mnt/isilon/:/mnt/isilon/"\
+-p -j 2 -c "qsub -l h_vmem=1G -l mem_free=1G -l m_mem_free=1G" \
+collate_outputs
+```
