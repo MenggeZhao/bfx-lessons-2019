@@ -99,10 +99,14 @@ https://github.com/samesense/project-cookiecutter/blob/master/cookiecutter.json
 * [Multiple gitignores are checked](https://github.com/samesense/project-template/blob/master/%7B%7B%20cookiecutter.repo_name%20%7D%7D/.gitignore): watch out when adding to data/
 * .gitkeep maintains empty folders
 
+---
+
 ## examples
 * https://github.com/drivendata/cookiecutter-data-science
 * https://github.com/sloria/cookiecutter-flask
 * [data recipe](https://github.com/samesense/data-recipe-template/tree/master/%7B%7B%20cookiecutter.repo_name%20%7D%7D)
+
+---
 
 ## More info
 * https://youtu.be/nExL0SgKsDY
