@@ -49,7 +49,7 @@ $ ls -R demo-drive
 ### Edit CHOP template
 ---
 
-### For CHOP project template
+### Fork CHOP project template
 * https://github.com/samesense/project-template
 
 ### Add .gitkeep file to new folder
