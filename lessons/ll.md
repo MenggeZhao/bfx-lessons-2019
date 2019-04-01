@@ -44,3 +44,22 @@ $ cookiecutter https://github.com/samesense/drive-template
 # examine structure
 $ ls -R demo-drive
 ```
+
+## Task 3
+### Edit CHOP template
+---
+
+### For CHOP project template
+* https://github.com/samesense/project-template
+
+### Add .gitkeep file to new folder
+* Create new folder under `{{ cookiecutter.repo_name }}`
+
+### Setup project structure with new template
+```
+$ source activate cookie
+$ cookiecutter <YOUR_FORK>
+# name it demo-project-2
+# examine structure
+$ ls -R demo-project-2
+```
