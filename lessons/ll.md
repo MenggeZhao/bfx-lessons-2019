@@ -1,3 +1,7 @@
+# Cookiecutter lunch and learn
+
+[Slides](../slides/ll/ll.md)
+
 ## Task 1
 ### Installation
 ---
