@@ -33,3 +33,14 @@ $ ssr
 # copy file to respublica
 $ scp some_file.txt $ssr/home/evansj/
 ```
+
+## Task 2
+### Tmux (20 min)
+---
+
+### Instructions
+* [https://hackernoon.com/a-gentle-introduction-to-tmux-8d784c404340](https://hackernoon.com/a-gentle-introduction-to-tmux-8d784c404340)
+
+### My tmux config (if interested)
+* Save as .tmux.conf in /home/USER/
+* [config](https://raw.githubusercontent.com/samesense/dotfiles/master/.tmux.conf)
