@@ -21,7 +21,7 @@ $ sh Miniconda3-latest-Linux-x86_64.sh
 
 ### Install cookiecutter in conda environment
 ```
-$ conda env create -n cookie python=3.5
+$ conda create -n cookie python=3.5
 $ source activate cookie
 $ conda install -c conda-forge cookiecutter
 $ which cookiecutter
