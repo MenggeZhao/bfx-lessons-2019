@@ -48,3 +48,20 @@ $ scp some_file.txt $ssr/home/evansj/
 ## Cookiecutter tasks
 [https://github.com/samesense/bfx-lessons-2019/blob/master/lessons/ll.md](https://github.com/samesense/bfx-lessons-2019/blob/master/lessons/ll.md)
 ---
+
+
+## Jupyter notebook tasks
+---
+
+### Launch notebook on respublica
+[https://wiki.chop.edu/pages/viewpage.action?spaceKey=RISUD&title=%28BETA%29+Jupyter+Notebooks](https://wiki.chop.edu/pages/viewpage.action?spaceKey=RISUD&title=%28BETA%29+Jupyter+Notebooks)
+
+### Install packages
+```
+import pandas as pd
+# broken !
+```
+
+```
+!pip install pandas
+```
