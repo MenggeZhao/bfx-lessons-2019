@@ -44,7 +44,6 @@ $ scp some_file.txt $ssr/home/evansj/
 [https://github.com/samesense/bfx-lessons-2019/blob/master/lessons/ll.md](https://github.com/samesense/bfx-lessons-2019/blob/master/lessons/ll.md)
 ---
 
-
 ## Jupyter notebook tasks
 ---
 
@@ -60,6 +59,6 @@ $ conda install pandas ipykernel
 $ python -m ipykernel install --user --name j_env --display-name "j_env"
 ```
 
-### Tutorial - Creating A New Notebook
+### Jupyter tutorial - Creating A New Notebook
 * [https://medium.com/codingthesmartway-com-blog/getting-started-with-jupyter-notebook-for-python-4e7082bd5d46](https://medium.com/codingthesmartway-com-blog/getting-started-with-jupyter-notebook-for-python-4e7082bd5d46)
 * try `import pandas`
