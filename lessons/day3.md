@@ -40,11 +40,13 @@ $ scp some_file.txt $ssr/home/evansj/
 * Save as .tmux.conf in /home/USER/
 * [config](https://raw.githubusercontent.com/samesense/dotfiles/master/.tmux.conf)
 
-## Cookiecutter tasks
-[https://github.com/samesense/bfx-lessons-2019/blob/master/lessons/ll.md](https://github.com/samesense/bfx-lessons-2019/blob/master/lessons/ll.md)
+## Task 3
+### Cookiecutter tasks
 ---
+[https://github.com/samesense/bfx-lessons-2019/blob/master/lessons/ll.md](https://github.com/samesense/bfx-lessons-2019/blob/master/lessons/ll.md)
 
-## Jupyter notebook tasks
+## Task 4
+### Jupyter notebook tasks
 ---
 
 ### Launch notebook on respublica
@@ -63,7 +65,8 @@ $ python -m ipykernel install --user --name j_env --display-name "j_env"
 * [https://medium.com/codingthesmartway-com-blog/getting-started-with-jupyter-notebook-for-python-4e7082bd5d46](https://medium.com/codingthesmartway-com-blog/getting-started-with-jupyter-notebook-for-python-4e7082bd5d46)
 * try `import pandas`
 
-## Git tasks
+## Task 5
+### Git tasks
 ---
 
 ### Github tutorial
