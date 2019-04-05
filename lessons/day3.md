@@ -1,9 +1,4 @@
 ## Misc utilities
-* Jupyter
-* Cookie cutter 
-* Ris reference dir 
-* Dbhi pipelines
-* Github
 
 ## Task 1
 ### Passwordless SSH (10 min)
