@@ -68,3 +68,39 @@ $ python -m ipykernel install --user --name j_env --display-name "j_env"
 
 ### Github tutorial
 * [https://github.com/samesense/github_tutorial](https://github.com/samesense/github_tutorial)
+
+### Search history for phrase
+```
+# search all files for touch in diff
+# inside github_tutorial
+$ git log -Stouch
+```
+
+Results:
+```
+commit eacd4dd0cb97516c41ac8dede737d263b95ffd48 (HEAD -> master, origin/master, origin/HEAD)
+Author: Perry <samesense@users.noreply.github.com>
+Date:   Fri Apr 5 09:55:31 2019 -0400
+
+    Update README.md
+```
+
+Now go to that commit:
+```
+# checkout commit with first mention of touch
+$ git checkout eacd4dd0cb97516c41ac8dede737d263b95ffd48
+# return to main branch
+$ git checkout master
+```
+
+```
+# find commit before touch was entered
+# top of history is the latest
+$ git log README.md | grep -A10 eacd4dd0cb97516c41ac8dede737d263b95ffd48
+```
+
+### Search for deleted files
+```
+# shows when file was in diffs
+git log --full-history -- leibyj.txt
+```
