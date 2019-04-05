@@ -62,3 +62,9 @@ $ python -m ipykernel install --user --name j_env --display-name "j_env"
 ### Jupyter tutorial - Creating A New Notebook
 * [https://medium.com/codingthesmartway-com-blog/getting-started-with-jupyter-notebook-for-python-4e7082bd5d46](https://medium.com/codingthesmartway-com-blog/getting-started-with-jupyter-notebook-for-python-4e7082bd5d46)
 * try `import pandas`
+
+## Git tasks
+---
+
+### Github tutorial
+* [https://github.com/samesense/github_tutorial](https://github.com/samesense/github_tutorial)
