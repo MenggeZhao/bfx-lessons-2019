@@ -44,3 +44,7 @@ $ scp some_file.txt $ssr/home/evansj/
 ### My tmux config (if interested)
 * Save as .tmux.conf in /home/USER/
 * [config](https://raw.githubusercontent.com/samesense/dotfiles/master/.tmux.conf)
+
+## Cookiecutter tasks
+[https://github.com/samesense/bfx-lessons-2019/blob/master/lessons/ll.md](https://github.com/samesense/bfx-lessons-2019/blob/master/lessons/ll.md)
+---
