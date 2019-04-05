@@ -56,12 +56,15 @@ $ scp some_file.txt $ssr/home/evansj/
 ### Launch notebook on respublica
 [https://wiki.chop.edu/pages/viewpage.action?spaceKey=RISUD&title=%28BETA%29+Jupyter+Notebooks](https://wiki.chop.edu/pages/viewpage.action?spaceKey=RISUD&title=%28BETA%29+Jupyter+Notebooks)
 
-### Install packages
+### Install packages in conda env
 ```
-import pandas as pd
-# broken !
+$ jupyter notebook --generate-config
+$ conda create -n j_env python=2.7
+$ source activate j_env
+$ conda install pandas ipykernel
+$ python -m ipykernel install --user --name j_env --display-name "j_env"
 ```
 
-```
-!pip install pandas
-```
+### Tutorial - Creating A New Notebook
+* [https://medium.com/codingthesmartway-com-blog/getting-started-with-jupyter-notebook-for-python-4e7082bd5d46](https://medium.com/codingthesmartway-com-blog/getting-started-with-jupyter-notebook-for-python-4e7082bd5d46)
+* try `import pandas`
