@@ -1,5 +1,7 @@
 ## Misc utilities
 
+[Slides](../slides/day3/day3.md)
+
 ## Task 1
 ### Passwordless SSH (10 min)
 ---
