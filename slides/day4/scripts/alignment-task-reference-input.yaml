@@ -1,0 +1,14 @@
+contamination_sites_bed: Homo_sapiens_assembly38.contam.bed
+contamination_sites_mu: Homo_sapiens_assembly38.contam.mu
+contamination_sites_ud: Homo_sapiens_assembly38.contam.UD
+dbsnp_vcf: Homo_sapiens_assembly38.dbsnp138.vcf
+indexed_reference_fasta: Homo_sapiens_assembly38.fasta
+knownsites:
+  - 1000G_omni2.5.hg38.vcf.gz
+  - 1000G_phase1.snps.high_confidence.hg38.vcf.gz
+  - Homo_sapiens_assembly38.known_indels.vcf.gz
+  - Mills_and_1000G_gold_standard.indels.hg38.vcf.gz
+reference_dict: Homo_sapiens_assembly38.dict
+wgs_calling_interval_list: wgs_calling_regions.hg38.interval_list
+wgs_coverage_interval_list: wgs_coverage_regions.hg38.interval_list
+wgs_evaluation_interval_list: wgs_evaluation_regions.hg38.interval_list
