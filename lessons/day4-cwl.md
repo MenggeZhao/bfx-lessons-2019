@@ -130,4 +130,4 @@ Resolved 'samtools-s3bam-header.cwl' to 'file:///Users/zhuy/Documents/chopwork/g
 Final process status is success
 ```
 
-[Slides](../slides/day4/day4.md)
+[Slides to Cavatica](https://github.com/samesense/bfx-lessons-2019/blob/master/slides/day4/day4.md#cavatica)
