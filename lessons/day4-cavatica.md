@@ -1,4 +1,4 @@
-# Day4 CWL & CAVATICA
+# Day4 CAVATICA
 
 [Slides](../slides/day4/day4.md)
 
@@ -104,5 +104,16 @@ $ sb upload --file header.txt --project yuankun/demo --output json | jq
 - scripts
 	- [draft alignment task](../slides/day4/scripts/alignment-task-draft.py) with [references](../slides/day4/scripts/alignment-task-reference-input.yaml)
 	- [import local cwl to cavatica](../slides/day4/scripts/import-cwl.py)
+
+[Slides](../slides/day4/day4.md)
+
+## Task 4 - Import and Edit Kids First DRC Alignment workflow
+- [Kids First DRC Alignment Workflow](https://cavatica.sbgenomics.com/public/apps#kids-first-drc/kids-first-drc-alignment-workflow/kfdrc-alignment-bam2cram2gvcf/)
+- Connect Rabix Composer to Cavatica
+  1. Settings -> Add Account -> Auth Token
+  2. Open a Project -> Plaforme -> Choose your project
+  3. Edit `Kids First DRC Alignment Workflow`
+  4. Search `bwa mem`, and change `-t 15` to `-t 16`
+  5. Save and publish it
 
 [Slides](../slides/day4/day4.md)

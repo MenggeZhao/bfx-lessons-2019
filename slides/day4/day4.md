@@ -114,3 +114,11 @@ steps:
 [Goolge Slides](https://docs.google.com/presentation/d/1934atCus2W4qbrMtxg5mnIUkRT6Lo7xB3G6wRqr9md0/edit?usp=sharing)
 
 ### [Cavatica Exercise](../../lessons/day4-cavatica.md) 
+
+## Some Links
+- kfdrc alignment workflow: https://github.com/kids-first/kf-alignment-workflow
+- kfdrc rna-seq workflow: https://github.com/kids-first/kf-rnaseq-workflow
+- kfdrc somatic worklfow: https://github.com/kids-first/kf-somatic-workflow
+- dockerfiles from d3b: https://github.com/d3b-center/bixtools
+- kfdrc dockerhub: https://hub.docker.com/u/kfdrc
+
